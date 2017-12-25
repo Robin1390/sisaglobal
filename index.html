@@ -109,12 +109,18 @@
       border-bottom-left-radius: 0px;
       border-bottom-right-radius: 0px;
   }
-
+  #log{
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0);
+    border-radius: 5px;
+    }
   #logo{
     width: 80px;
     height: 80px;
     background: rgba(255,255,255,0);
     border-radius: 5px;
+    display: none;
   }
   .panel-footer {
       background-color: white !important;
@@ -195,10 +201,18 @@
         width: 100%;
         margin-bottom: 35px;
     }
+    #logo {
+    	margin-left: 300px;
+	    display: block;
+    }
   }
   @media screen and (max-width: 480px) {
     .logo {
         font-size: 150px;
+    }
+    #logo{
+    margin-left: 150px;	
+    display: block;
     }
   }
   </style>
@@ -227,7 +241,8 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <div id="logo"></div>
+  <div id="log"></div>
+  <img id="logo" src="logo.jpg">
   <h1>Sisa Global</h1> 
   <p>International Freight forwarder's</p>
   <address><p>E-233, 2nd Floor Flatted Factory Complex Okhla Industrial Estate</p></address> 
